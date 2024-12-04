@@ -1,0 +1,871 @@
+*{
+    box-sizing: border-box;
+}
+
+h1{font-size: 2.5rem; color: white;}
+h2{font-size: 1.8rem; color: white;}
+h3{font-size: 1.2rem; color: white;}
+p, a{font-size: 1.125rem; color: white;} 
+figcaption{ font-size: 1.3rem; color: #ffff;}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+   
+    background-color: #070707;  
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ME GUSTA*/
+    
+}
+
+
+/* ----- SECCION PRINCIPAL HEADER----- */
+
+header{
+    background-color: rgba(0, 0, 0, 0.5);  
+    position: fixed; /* Hace que el elemento se mantenga en su lugar */
+    top: 0; /* Se posiciona en la parte superior */
+    left: 0;
+    width: 100%; /* Asegura que cubra todo el ancho */   
+    z-index: 10; /* Eleva el elemento para que esté encima de otros */ 
+    padding: 22px;   
+}
+
+header nav{
+    display: flex;    
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-between; /* Centra horizontalmente */   
+    
+}
+
+.menu-links {
+    display: flex; /* Asegura que funcione con flexbox */
+    gap: 15px; /* Añade espacio entre los enlaces */
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 15px; 
+    justify-content: flex-end;
+    align-items: center; /* Asegura que estén alineados verticalmente */
+
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    color: #f9ef23;
+}
+
+@media (max-width: 768px){
+
+    header{
+        background-color: rgba(0, 0, 0, 0.8); 
+        
+    } 
+   
+}
+
+#banner-principal img {
+    width: 10rem;
+    margin-top: -55px;
+}
+
+#banner-principal{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('/img/amore.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/amore.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position:center;
+    height: 84vh;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    text-align: center;
+    padding-top: 150px ;
+    background-position: center center;
+}
+
+.logo-moments-hero{
+    position: relative;
+}
+
+#banner-principal .button-presupuesto{
+    display: inline-block; /* Se comporta como un botón */
+    background-color: #f9ef23;
+    text-decoration: none;
+    color: black; /* Texto negro */
+    padding: 10px 30px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 30px;
+    font-size: 1rem; /* tamaño de texto */
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */    
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.button-presupuesto:hover {
+    background-color: #f1f1e5; /* Azul más oscuro al pasar */
+    transform: scale(1.05); /* Hace que el botón crezca ligeramente */
+}
+
+
+/* ----- SECCION PORQUE ELEGIRNOS ----- */
+#section-porque-elegirnos { 
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+#encabezado-porque-elegirnos {    
+    font-size: 2rem;
+    margin-bottom: 60px;
+}
+
+figure img {
+    width: 5rem;
+    margin-bottom: 20px;
+}
+
+
+.motivos {
+    display: flex; /* Hijos alineados en fila horizontal */
+    justify-content: space-around; /* Espacio alrededor */
+    flex-wrap: wrap;
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+}
+
+.motivo {
+    text-align: center;
+}
+
+
+.section-contenido-a-la-izquierda{    
+    display: flex; /* Hijos alineados en fila horizontal */
+    justify-content: space-around; /* Espacio alrededor */
+    flex-wrap: wrap;
+    padding-top: 100px;
+    
+}
+
+.texto{ /*izquierda*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    text-align: left; /* Centra el contenido interno */   
+    
+}
+
+.contenedor-de-imagenes-ala-derecha{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Las imágenes se apilan en fila */
+    gap: 20px; /* Espacio entre las imágenes */
+    justify-content: center;
+}
+
+.imagen-ala-derecha:nth-child(1) {
+    width: 300px; /* Ajusta el ancho de las imágenes */
+    height: 400px;   
+    border-radius: 8px; /* Opcional: Bordes redondeados */  
+    object-fit: cover;
+}
+
+.imagen-ala-derecha:nth-child(2) {
+    width: 300px; /* Ajusta el ancho de las imágenes */
+    height: 400px;   
+    margin-top: 50px;
+    border-radius: 8px; /* Opcional: Bordes redondeados */  
+    object-fit: cover;
+}
+
+
+/* SECCION EVENTOS + SOLICITAR INFO */
+
+.seccion-eventos{
+    background-color: #242424;      
+    text-align: center;
+    padding: 30px 0;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si es necesario */
+}
+
+.seccion-eventos p{   
+    margin-bottom: 30px;
+    
+}
+.seccion-eventos h2{
+       
+    margin-bottom: -5px;
+}
+
+/* Cartillas de eventos */
+
+
+#grilla-eventos{
+    position: relative;
+    overflow: hidden; /*Esconde el contenido que se sale del contenedor */
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 40px;  
+    justify-items: center; 
+    align-items: center;  
+}
+
+.slider-eventos{
+    display: flex; /*se ve toda la grilla en fila*/
+    gap: 5px;
+    transition: transform 0.3s ease-in-out; /* Suaviza el desplazamiento */
+   
+}
+
+
+
+/* CADA CARTILLA DE EVENTO - ID*/
+
+#cartilla-boda {
+    background-image: url('/img/boda.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/boda.jpg);  
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+
+#cartilla-cumpleaños {
+    background-image: url('/img/quince.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/quince.jpg);  
+
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;    
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#cartilla-musical {
+    background-image: url('/img/musical.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/musical.jpg);  
+
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+   
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#cartilla-feria {
+    background-image: url('/img/ferias.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/ferias.jpg);  
+
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#cartilla-aniversarios {
+    background-image: url('/img/aniversarios.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/aniversarios.jpg);  
+
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#cartilla-protocolar-ceremonial {
+    background-image: url('/img/protocolar-ceremonial.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/protocolar-ceremonial.jpg);  
+
+    position: relative;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+.seccion-eventos .button-solicitar-info{
+    display: inline-block; /* Se comporta como un botón */
+    background-color: #f9ef23;
+    text-decoration: none;
+    color: black; /* Texto negro */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 30px;
+    font-size: 0.85rem; /* tamaño de texto */
+    text-align: center;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* CADA CARTILLA DE EVENTO - CLASS*/
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000000;
+    color: rgb(250, 247, 62);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    z-index: 100;
+}
+
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/*  ----- Pre - footer (Img de fondo mas un texto) ----- */
+
+.banner-contacto {
+    position: relative;
+    background-image: url('/img/fiesta.jpg'); /* Ajusta esta ruta */
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0, 0.5),
+        rgba(0,0,0, 0.5)
+    ) ,url(/img/fiesta.jpg);  
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+.texto-banner{
+    text-align: left;
+}
+
+/* ----- Footer (contacto y copyriright) ----- */
+
+footer {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffd700; /* Color dorado para los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+footer .contenedor-contacto {
+    margin-bottom: 10px; /* Espaciado entre contacto y texto de copyright */
+}
+
+    /* Banner superior con imagen */
+
+.contenedor-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Espacio alrededor */
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+
+footer p{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+
+.informacion-contacto{
+    text-align: left;
+}
+
+.logo-moments img{
+    width: 8rem;
+    text-align: center;
+    object-fit: cover;
+}
+
+/* FORMULARIO */
+
+
+
+.banner-principal-eventos #evento-seleccionado{
+    font-size: 4rem;
+    text-shadow:0 0 20px #000000;
+    display: flex;
+    position: absolute;
+    top: 22%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta la posición exacta para centrar */
+    text-align: center; /* Asegura que el texto se alinee correctamente */   
+}
+
+
+#imagen-evento {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* La imagen no será más grande que su contenedor */  
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position:center;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    text-align: center; 
+    margin-bottom: 30px; 
+    
+}
+
+.container-form{
+    display: flex;   
+    flex-direction: row;
+    
+    padding-left:40px; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.container-form .seccion-descriptiva-evento{  
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    flex: 0.5; /* Toma el 70% del ancho disponible */
+    align-items:flex-start;
+    flex-wrap: wrap;
+    padding-right: 20px;
+    padding-left: 20px;      
+}
+
+.seccion-descriptiva-evento h2{
+    margin-bottom: 0;
+    margin-top: -70px;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+
+    .container-form {
+        flex-direction: column; /* Cambia a columna */        
+        margin: 0px 20px;
+        padding: 0px;
+        gap:0;
+        justify-content: center;
+        justify-items: center;
+        padding-bottom: 30px;
+    }
+
+    .container-form .seccion-descriptiva-evento {
+        padding: 0px 0px ; /* Elimina el padding lateral */
+        margin: 0px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seccion-descriptiva-evento h2{
+        margin-bottom: 0;
+        margin-top: 0px;
+    }
+    
+    .banner-principal-eventos #evento-seleccionado{
+        font-size: 3rem;
+        text-shadow:0 0 20px #000000;
+        display: flex;
+        position: absolute;
+        top: 19%; /* Centra verticalmente */
+        left: 50%; /* Centra horizontalmente */
+        transform: translate(-50%, -50%); /* Ajusta la posición exacta para centrar */
+        text-align: center; /* Asegura que el texto se alinee correctamente */   
+    }
+
+    #imagen-evento {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* La imagen no será más grande que su contenedor */  
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;      
+        background-position:center;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        text-align: center;         
+    }
+   
+
+    .btn-volver{
+        display: none;
+    }
+
+    #descripcion-evento{
+        text-align: center;
+        padding: 0;
+    }
+
+    #seccion-form {
+        margin-top: 20px; /* Añade espacio entre secciones */
+    }
+}
+
+
+
+#descripcion-evento{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.05rem;
+    font-style: normal !important;
+    font-weight: normal !important; /* Esto elimina cualquier negrita */
+}
+
+#seccion-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex: 0.4; /* Toma el 50% del ancho disponible */
+   
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 8px;
+    justify-content: flex-end;
+    color: rgb(255, 255, 255);   
+    
+    
+}
+
+input, select {
+    width: 80%; /* Hace que los inputs y selects ocupen el ancho completo */
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+
+#seccion-form .btn-enviar{
+    position: relative;
+    display: inline-block; /* Se comporta como un botón */
+    background-color: #f9ef23;
+    text-decoration: none;
+    color: black; /* Texto negro */
+    padding: 10px 0; /* Espaciado interno (arriba/abajo, izquierda/derecha) */
+    border-radius: 30px;
+    font-size: 1rem; /* tamaño de texto */
+    text-align: center;   
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */    
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+label {
+    display: block; /* Asegura que cada etiqueta ocupe una línea completa */
+    margin-bottom: 8px;
+}
+
+
+
+ 
+h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+  
+  
+
+  
+button {
+    background-color: #cf8229;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+}
+  
+  button:hover {
+    background-color: #45a049;
+}
+  
+  .form-group {
+    margin-bottom: 15px;
+}
+  
+  #texto-formulario {
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #130707;
+}
+
+
+.redes-sociales-footer{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .redes-sociales-footer{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        gap: 30px;
+    }
+}
+
+/* wp */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-float a {
+    display: block;
+    width: 60px;
+    height: 60px;
+}
+
+.whatsapp-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Aquí van tus estilos para móviles */
+
+    #quienes-somos{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
+
+/* ----- Footer (contacto y copyriright) ----- */
+
+footer {
+    background-color: #272727; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+    padding: 0px 0px;
+    text-align: center;
+    
+}
+
+footer a {
+    color: #ffd700; /* Color dorado para los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+}
+
+
+footer a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
+footer .contenedor-contacto {
+    margin-bottom: 10px; /* Espaciado entre contacto y texto de copyright */
+}
+
+    /* Banner superior con imagen */
+
+.contenedor-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around; /* Espacio alrededor */
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+
+footer p{
+    font-size: 1rem;
+    padding: 10px;
+}
+
+footer .copyright{
+    background-color: #0a0a0a;
+    margin: auto;
+    padding: auto;
+    max-width: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.copyright a{
+    color: white;
+    font-size: 1rem;
+}
+
+.informacion-contacto{
+    text-align: left;
+
+}
+
+.logo-moments img{
+    width: 8rem;
+    text-align: center;
+    object-fit: cover;
+    justify-content: center;
+}
+
+
+@media (max-width: 768px){
+    .copyright p{
+        font-size: 1rem;
+    }
+
+    .contenedor-datos{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between; /* Espacio alrededor */
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 20px;
+    }
+}

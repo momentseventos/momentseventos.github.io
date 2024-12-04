@@ -1,0 +1,56 @@
+  <section class="seccion-eventos" id="eventos">        
+        <h2>Eventos</h2>
+        <p>Nos comprometemos a brindarte la mejor experiencia de tus sueños</p>
+
+       
+        <div id="grilla-eventos">
+            
+            <button class="slider-btn prev-btn">❮</button>
+
+            <div class="slider-eventos">
+
+                <!-- Evento Boda -->
+                <div class="evento" id="cartilla-boda">
+                    <h3>Boda</h3>
+                    <a href="/formulario-eventos.html" class="button-solicitar-info" title="Solicitar-informacion-sobre-bodas">Solicitar información</a>
+                </div>
+
+                <!-- Evento Cumpleaños -->
+                <div class="evento" id="cartilla-cumpleaños">
+                    <h3>Cumpleaños</h3>
+                    <a href="/formulario-eventos.html" class="button-solicitar-info" title="Solicitar-informacion-sobre-bodas">Solicitar información</a>
+                </div>
+
+                <!-- Evento Evento Musical -->
+                <div class="evento" id="cartilla-musical">
+                    <h3>Musicales</h3>
+                    <a href="/formulario-eventos.html" class="button-solicitar-info" title="Solicitar-informacion-sobre-bodas">Solicitar información</a>
+                </div>
+
+                <!-- Evento Feria -->
+                <div class="evento" id="cartilla-feria">
+                    <h3>Ferias</h3>
+                    <a href="/formulario-eventos.html" class="button-solicitar-info" title="Solicitar-informacion-sobre-bodas">Solicitar información</a>
+                </div>
+
+                <!-- Protocolar y ceremonial -->
+                <div class="evento" id="cartilla-protocolar-ceremonial">
+                    <h3>Protocolar y ceremonial</h3>
+                    <a href="/formulario-eventos.html" class="button-solicitar-info" title="Solicitar-informacion-sobre-bodas">Solicitar información</a>
+                </div>
+                    
+                <!-- Aniversarios -->
+                <div class="evento" id="cartilla-aniversarios">
+                    <h3>Aniversarios</h3>
+                    <a href="/formulario-eventos.html" class="button-solicitar-info" title="Solicitar-informacion-sobre-bodas">Solicitar información</a>
+                </div>
+
+                
+
+            </div>
+
+            
+        <button class="slider-btn next-btn">❯</button>
+        </div>
+        
+    </section>

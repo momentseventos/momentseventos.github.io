@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleform.css">
+    
+    <link rel="stylesheet" href="animacion-page.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <title>Moments'</title>
+</head>
+<body id="page-formulario">
+    <!-- MENU DE NAVEGACION -->
+    <header>        
+            <nav>
+                <div class="menu-links">
+                    <!-- <a target="_blank" href="index.html" title="Ver más información sobre nuestros eventos">Eventos</a>
+                    <a target="_blank" href="/index.html" title="Conoce quiénes somos">Sobre nosotros</a>
+                    <a target="_blank" href="/index.html" title="Conoce quiénes somos">¿Porque elegirnos?</a>
+                    <a href="#info-contacto" title="Ponte en contacto con nosotros" >Contacto</a> -->
+                    <a href="/index.html" title="Volver a Menu principal" >Menu principal</a> 
+                </div>
+               
+                <div class="redes-sociales">
+                    <a href="https://facebook.com" target="_blank" title="Síguenos en Facebook" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/moments.event_s/" target="_blank" title="Síguenos en Instagram" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>                   
+                </div>
+            </nav>       
+    </header>
+
+
+    <!--Pantalla principal de Evento-->
+
+    <section class="banner-principal-eventos">
+        <img id="imagen-evento" src="/img/fiesta.jpg" alt="Imagen del evento"/>   
+        <h1 id="evento-seleccionado">Eventos</h1>             
+    </section> 
+
+    <div class="container-form" >
+        
+        <section class="seccion-descriptiva-evento">
+            <h2>MOMENT´S</h2>
+            <h3 id="descripcion-evento">¡Elige el evento por el cual quieres consultar!</h3>
+            <!-- <a href="/index.html" class="btn-volver"> < Volver</a> -->
+        </section>
+
+        <form id="seccion-form" action="mailto:moment's@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-container">
+                <h2>Formulario de Contacto</h2>            
+            
+                <label for="tipo-evento">Tipo de evento:</label>
+                <select id="tipo-evento" onchange="cambiarFormulario()">
+                    <option value="" selected disabled>Seleccione el tipo de evento</option>
+                    <option value="casamiento">Casamiento</option>
+                    <option value="cumpleanos">Cumpleaños</option>
+                    <option value="show-musical">Show Musical</option>
+                    <option value="feria">Feria</option>
+                    <option value="protocolar">Protocolar y Ceremonial</option>
+                    <option value="aniversario">Aniversario</option>
+                </select>
+    
+                <!-- Nombre -->
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                
+                <!-- Teléfono -->
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" required>
+                
+                <!-- Correo -->
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                
+                <!-- Comentario -->
+                <label for="comentario">Comentario:</label>
+                <input type="text" id="comentario" name="comentario" placeholder="Cuentamente un poco..." required>
+                
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
+            
+    </div>
+
+    
+     
+
+    <!-- Seccion pre-footer -->
+    <section class="pre-footer" id="info-contacto">
+        <div class="banner-contacto" role="banner" aria-label="Ponte en contacto">
+            <div class="texto-banner">
+                <h2>¡Contactanos HOY!</h2>            
+            </div>  
+        </div>
+              
+    </section>
+
+     <!-- Footer -->
+      <!-- Footer -->
+     <footer>
+        <div class="contenedor-datos">
+            <div class="informacion-contacto"> 
+                <h2>Contacto</h2>
+                <a target="_blank" href="https://wa.me/3517470993" aria-label="Contactar vía WhatsApp" >351 74 70 993</a> <br>
+                <a target="_blank" href="mailto: MOMENT´S@GMAIL.COM" aria-label="Enviar un correo electrónico a MOMENT'S@GMAIL.COM">MOMENT'S@GMAIL.COM</a>            
+            </div>
+    
+            <div class="logo-moments">
+                <img src="img/logo-moment.png" alt="logo-de-organizacion-de-eventos-moments">
+            </div>
+
+            <div class="redes-sociales-footer">
+                <a href="https://facebook.com" target="_blank" title="Síguenos en Facebook" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/moments.event_s/" target="_blank" title="Síguenos en Instagram" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>                   
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p> &COPY; Copyright 2024 - Creado y diseñado por <a href="https://www.instagram.com/identidad_grafica.ok/">Identidad Gráfica</a></p>
+        </div>
+        
+    </footer> 
+
+
+    <script src="form.js"></script>
+    <script src="transicionpaginas.js"></script>    
+    <!-- <script src="wp.js"></script> -->
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/3517470993" target="_blank" title="Contáctanos por WhatsApp">
+            <img src="/iconos/WhatsApp-icono.svg" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+    </div>
+
+</body>
+</html>
